@@ -1,0 +1,66 @@
+div  {
+    font-weight: bold;
+    color:white;
+    font-size: 18px;
+}
+a   {
+    color: lightsalmon;
+}
+form    {
+    color: chartreuse;
+    border: 1.2rem;
+    text-align: left; 
+    margin-left: 15px;
+}
+select  {
+    color: lightcoral;
+}
+img + label{
+    font-size: 12px;
+    text-align: center;
+    color: dimgrey;
+    margin-left:60%; 
+}
+label +input {
+border: aquamarine;
+padding: 10px 32px;
+}
+
+body    {
+    background-color: black;
+    }
+
+.p1 {
+    color: aliceblue;
+    font-size:45px;
+    padding: 5% 40% 0% 10%;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    }
+.p2 {
+    color:silver;
+    font-size: 18px;
+    padding: 0% 45% 7% 10%;
+}
+p a {
+    color: silver;
+}
+.bigimages {
+    
+    margin: auto;
+   border-radius: 14px;
+    padding: 10px;
+    width: 350px;
+    
+}
+.imageMargin  {
+    margin: 0% 4% 0% 10%;
+}
+.btnup  {
+    margin-bottom: 15%;
+    padding: 0%;
+    width: 20%;
+    height: 15;
+    color: blue;
+    
+}
