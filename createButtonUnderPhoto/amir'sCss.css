@@ -1,0 +1,92 @@
+div  {
+    font-weight: bold;
+    color:white;
+    font-size: 18px;
+}
+a   {
+    color: lightsalmon;
+}
+form    {
+    color: chartreuse;
+    border: 1.2rem;
+    text-align: left; 
+    margin-left: 15px;
+}
+select  {
+    color: lightcoral;
+}
+img + label{
+    font-size: 12px;
+    text-align: center;
+    color: dimgrey;
+    margin-left:60%; 
+}
+label +input {
+border: aquamarine;
+padding: 10px 32px;
+}
+html    {
+    scroll-behavior: smooth;
+}
+
+body    {
+    background-color: black;
+    }
+
+.p1 {
+    color: aliceblue;
+    font-size:45px;
+    padding: 5% 40% 0% 10%;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    }
+.p2 {
+    color:silver;
+    font-size: 18px;
+    padding: 0% 45% 0% 10%;
+}
+p a {
+    color: silver;
+}
+
+
+
+.butoon {
+    display: flexbox;
+    justify-content: right;
+}
+select:hover {
+    background-color:lightgreen;
+    color: black;
+    
+}
+.button1:hover   {
+    background-color: darkolivegreen;
+    color:yellow;
+}
+
+.imagemargin2 {
+    display: flex;
+    padding: 120px;
+    height: 340px;
+    width: 349px;
+    flex-wrap: wrap;
+    margin: 0%;
+}
+.bigimages {
+    border-radius: 14px;
+    width: 350px;
+    height: 500px;
+}
+.button1 {
+    width: 350px;
+    height: 40px;
+    border-radius: 12px;
+    background-color:thistle;
+
+}
+.gotoup     {
+    width: 60px;
+    height: 30px;
+}
+    
