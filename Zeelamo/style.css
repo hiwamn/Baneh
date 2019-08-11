@@ -1,0 +1,36 @@
+
+body{
+    background-color: LightGray;
+}
+
+.top-pad{
+  padding-top: 20px;
+}
+
+footer{
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav{
+ background-color: #ccc;
+ padding: 50px;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    padding:10px;
+    margin: 5px;
+    background-color: #aaa;
+    color:white;
+    display: block;
+}
