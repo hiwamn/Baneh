@@ -4,10 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>BanehLearning</title>
-  <link rel="stylesheet" href="./Ramyars_css/style.css">
+ 
+  <link rel="stylesheet" href="Ramyars_css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="mdb/css/mdb.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+ 
+  
+  
+
+  <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.min.css">
+
  </head>
  <body>
-  <div  class="outer" >
+  <div  class="outer">
       <div class="header-container">
             <div class="header">
                     <div id=header-logo>
@@ -43,7 +53,19 @@
                     <div id="nav">
 				
                      <ul>
-                        <li class="nav-inspiration"><a href="#">Inspiration</a>
+                            <li class="nav-mobile d-sm-none"><a href="#">Menu</a>
+
+                                <ul>
+                                    <li><a href="#">🏠Home</a></li>
+                                    <li><a href="#">🌈 Inspiration</a></li>
+                                    <li><a href="#">🛠 Templates</a></li>
+                                    <li><a href="#">📖 Articles</a></li>	
+                                    <li><a href="#">🎙 Podcast</a></li>	
+                                    <li><a href="#">ℹ️ About</a></li>
+                                    <li><a href="#">🗞 Newsletter</a></li>		
+                                </ul>	
+                            </li>
+                        <li class="nav-inspiration d-none d-sm-block"><a href="#">Inspiration</a>
                             <ul>
                               <li><a href="#" >🗂 Browse All</a></li> 
                               <li><a href="#">🥇 Top Awards</a></li>  
@@ -51,7 +73,7 @@
                             </ul>   
                         </li>
 
-                     <li><a href="#">Articles</a>
+                     <li class="d-none d-sm-block"><a href="#">Articles</a>
             
                         <ul>
                             <li><a href="#">🗂 Browse All</a></li>
@@ -65,7 +87,7 @@
             
                      </li>                   			
             
-                    <li><a href="#">Podcast</a>
+                    <li class="d-none d-sm-block"><a href="#">Podcast</a>
             
                          <ul>
                              <li><a ref="#">🗂 Browse All</a></li>		
@@ -81,7 +103,7 @@
                         </ul>	  
                     </li>
             
-                    <li ><a href="#">Subscribe</a>
+                    <li class="d-none d-md-block"><a href="#">Subscribe</a>
             
                          <ul>	
                              <li><a href="#" >💌 Newsletter</a></li>
@@ -94,7 +116,7 @@
             
                     </li>
             
-                    <li><a href="#">Info</a>
+                    <li class="d-none d-md-block"><a href="#">Info</a>
             
                          <ul>
                              <li><a href="#">💌 Submit</a></li>		
@@ -111,6 +133,17 @@
                 
                     </ul>				
                 </div>
+               <div class="search mt-2 col-sm-3">
+                    
+                            <div class="input-group">
+                              <input type="search" placeholder="search..." aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                              <div class="input-group-append bg-light search-button">
+                                <button id="button-addon1" type="submit" class="btn btn-link text-primary p-0 mr-1"><i class="fas fa-search"></i></button>
+                              </div>
+                            </div>
+                         
+               </div>
+               
                   
          </div> 
       </div> 
@@ -121,7 +154,7 @@
                       <div class="archive-header-info">
                           <div class="archive-title">
                               <h1>
-                                  Bnaeh learning website
+                                  Baneh learning website
                               </h1>
                           </div>
                           <div class="archive-description">
@@ -133,141 +166,225 @@
                   </div>
 
               </div>
-              <div class="home-posts">
-                  <div class="post">
-                      <div class="thumb">
-                          <div class="thumb-img">
-                              <a href="#">
-                                  <img src="./Ramyars_img/opl-thumb-1.jpg" alt="">
-                              </a>
-                          </div>
-                          <div class="thumb-info">
-                              <div class="thumb-title">
-                                  <div class="thumb-name">
-                                      <h3>
-                                          <a href="#">
-                                              Lorem ipsum dolor sit.
-                                          </a>
-                                      </h3>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="post">
-                        <div class="thumb">
-                            <div class="thumb-img">
-                                <a href="#">
-                                    <img src="./Ramyars_img/thumb-opl.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="thumb-info">
-                                <div class="thumb-title">
-                                    <div class="thumb-name">
-                                        <h3>
-                                            <a href="#">
-                                                Lorem ipsum dolor sit.
-                                            </a>
-                                        </h3>
-                                    </div>
+              <div class="home-posts row ml-1 mr-1">
+                  <div class="col-sm-4">
+                        <div class="card card-cascade">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay">
+                                  <img class="card-img-top" src="Ramyars_img/opl-thumb-1.jpg" alt="Card image cap">
+                                  <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
                                 </div>
-                            </div>
+                              
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+                              
+                                  <!-- Title -->
+                                  <h4 class="card-title"><strong>post title</strong></h4>
+                                  <!-- Subtitle -->
+                                  <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                  <!-- Text -->
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                  </p>
+                              
+                                  <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                        <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                  </a>
+                              
+                                </div>
+                              
+                                <!-- Card footer -->
+                                <div class="card-footer text-muted text-center">
+                                  1 days ago
+                                </div>
+                              
+                        </div>
+                  </div>
+                  <div class="col-sm-4">
+                        <div class="card card-cascade">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay">
+                                  <img class="card-img-top" src="Ramyars_img/thumb-opl.jpg" alt="Card image cap">
+                                  <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                </div>
+                              
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+                              
+                                  <!-- Title -->
+                                  <h4 class="card-title"><strong>post title</strong></h4>
+                                  <!-- Subtitle -->
+                                  <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                  <!-- Text -->
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                  </p>
+                              
+                                  <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                        <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                  </a>
+                              
+                                </div>
+                              
+                                <!-- Card footer -->
+                                <div class="card-footer text-muted text-center">
+                                  2 days ago
+                                </div>
+                              
                         </div>
                     </div>
-                    <div class="post">
-                            <div class="thumb">
-                                <div class="thumb-img">
-                                    <a href="#">
-                                        <img src="./Ramyars_img/squarespace-marketing-tools-thumb.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="thumb-info">
-                                    <div class="thumb-title">
-                                        <div class="thumb-name">
-                                            <h3>
-                                                <a href="#">
-                                                    Lorem ipsum dolor sit.
-                                                </a>
-                                            </h3>
-                                        </div>
+                    <div class="col-sm-4 ">
+                            <div class="card card-cascade">
+
+                                    <!-- Card image -->
+                                    <div class="view view-cascade overlay">
+                                      <img class="card-img-top" src="Ramyars_img/squarespace-marketing-tools-thumb.jpg" alt="Card image cap">
+                                      <a href="#">
+                                        <div class="mask rgba-white-slight"></div>
+                                      </a>
                                     </div>
-                                </div>
+                                  
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center">
+                                  
+                                      <!-- Title -->
+                                      <h4 class="card-title"><strong>post title</strong></h4>
+                                      <!-- Subtitle -->
+                                      <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                      <!-- Text -->
+                                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                      </p>
+                                  
+                                      <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                            <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                      </a>
+                                  
+                                    </div>
+                                  
+                                    <!-- Card footer -->
+                                    <div class="card-footer text-muted text-center">
+                                      3 days ago
+                                    </div>
+                                  
                             </div>
-                        </div>
+                    </div>
               </div>
               <div class="latest-post-header">
                   <h3>
                       latest website posts
                   </h3>
               </div>
-              <div class="archive-box">
+              <div class="archive-box row ml-1 mr-1">
                     
-                    <div class="post">
-                            <div class="post">
-                                    <div class="thumb">
-                                        <div class="thumb-img">
-                                            <a href="#">
-                                                 <img src="./Ramyars_img/opl-master-14.jpg" alt="">
-                                             </a>
-                                        </div>
-                                        <div class="thumb-info">
-                                            <div class="thumb-title">
-                                                    <div class="thumb-name">
-                                                        <h3>
-                                                          <a href="#">
-                                                                    Lorem ipsum dolor sit.
-                                                           </a>
-                                                        </h3>
-                                                    </div>
-                                            </div>
-                                        </div>
+                    <div class="col-sm-4">
+                            <div class="card card-cascade">
+    
+                                    <!-- Card image -->
+                                    <div class="view view-cascade overlay">
+                                      <img class="card-img-top" src="Ramyars_img/opl-master-14.jpg" alt="Card image cap">
+                                      <a href="#">
+                                        <div class="mask rgba-white-slight"></div>
+                                      </a>
                                     </div>
-                                </div>
-                        </div>
-                        <div class="post">
-                                <div class="post">
-                                        <div class="thumb">
-                                            <div class="thumb-img">
-                                                <a href="#">
-                                                    <img src="./Ramyars_img/opl-master-11.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="thumb-info">
-                                                <div class="thumb-title">
-                                                    <div class="thumb-name">
-                                                        <h3>
-                                                            <a href="#">
-                                                                Lorem ipsum dolor sit.
-                                                            </a>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                 </div>
-                        </div>
-                        <div class="post">
-                                <div class="post">
-                                        <div class="thumb">
-                                            <div class="thumb-img">
-                                                <a href="#">
-                                                    <img src="./Ramyars_img/opl-master-9.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="thumb-info">
-                                                <div class="thumb-title">
-                                                    <div class="thumb-name">
-                                                        <h3>
-                                                            <a href="#">
-                                                                Lorem ipsum dolor sit.
-                                                            </a>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                 </div>
-                        </div>
+                                  
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center">
+                                  
+                                      <!-- Title -->
+                                      <h4 class="card-title"><strong>post title</strong></h4>
+                                      <!-- Subtitle -->
+                                      <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                      <!-- Text -->
+                                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                      </p>
+                                  
+                                      <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                            <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                      </a>
+                                  
+                                    </div>
+                                  
+                                    <!-- Card footer -->
+                                    <div class="card-footer text-muted text-center">
+                                      1 days ago
+                                    </div>
+                                  
+                            </div>
+                      </div>
+                      <div class="col-sm-4">
+                            <div class="card card-cascade">
+    
+                                    <!-- Card image -->
+                                    <div class="view view-cascade overlay">
+                                      <img class="card-img-top" src="Ramyars_img/opl-master-11.jpg" alt="Card image cap">
+                                      <a href="#">
+                                        <div class="mask rgba-white-slight"></div>
+                                      </a>
+                                    </div>
+                                  
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center">
+                                  
+                                      <!-- Title -->
+                                      <h4 class="card-title"><strong>post title</strong></h4>
+                                      <!-- Subtitle -->
+                                      <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                      <!-- Text -->
+                                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                      </p>
+                                  
+                                      <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                            <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                      </a>
+                                  
+                                    </div>
+                                  
+                                    <!-- Card footer -->
+                                    <div class="card-footer text-muted text-center">
+                                      1 days ago
+                                    </div>
+                                  
+                            </div>
+                      </div>
+                      <div class="col-sm-4">
+                            <div class="card card-cascade">
+    
+                                    <!-- Card image -->
+                                    <div class="view view-cascade overlay">
+                                      <img class="card-img-top" src="Ramyars_img/opl-master-9.jpg" alt="Card image cap">
+                                      <a href="#">
+                                        <div class="mask rgba-white-slight"></div>
+                                      </a>
+                                    </div>
+                                  
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center">
+                                  
+                                      <!-- Title -->
+                                      <h4 class="card-title"><strong>post title</strong></h4>
+                                      <!-- Subtitle -->
+                                      <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                                      <!-- Text -->
+                                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+                                      </p>
+                                  
+                                      <a href="#" class="black-text d-flex flex-row-reverse p-2">
+                                            <h5 class="waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                                      </a>
+                                  
+                                    </div>
+                                  
+                                    <!-- Card footer -->
+                                    <div class="card-footer text-muted text-center">
+                                      1 days ago
+                                    </div>
+                                  
+                            </div>
+                      </div>
                             
                     
               </div>
@@ -276,6 +393,10 @@
 
       </div> 
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src='/js/bootstrap.bundle.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src='/js/bootstrap.min.js'></script>
  </body>
 </html>
 
